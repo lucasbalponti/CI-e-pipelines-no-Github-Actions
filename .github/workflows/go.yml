@@ -25,7 +25,7 @@ jobs:
       run: go build -v main.go
     
     - name: Build-DB
-      run: dokcer-compose build
+      run: docker-compose build
     
     - name: Create-DB
       run: docker-compose up -d
