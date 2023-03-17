@@ -43,23 +43,26 @@ jobs:
 
   build:
     needs: test
-    runs-on: ${{ matrix.OS }}
+    runs-on: ubuntu-latest
     env:
       HOST: localhost
       PORT: 5432
       USER: root
       PASSWORD: root
       DBNAME: root
-    strategy:
-      matrix:
-        OS: ['ubuntu-latest', 'ubuntu-18.04']
     
     steps:
     - uses: actions/checkout@v3
 
     - name: Build
       run: go build -v main.go
-  
+    
+    -name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.0
+      with:
+        name: api_go
+        path: main
+    
   docker:
     needs: build
     uses: ./.github/workflows/Docker.yml
