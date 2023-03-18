@@ -39,7 +39,7 @@ jobs:
       run: docker-compose up -d
 
     - name: Test
-      run: go test -v ./src/main_test.go
+      run: go test -v main_test.go
 
   build:
     needs: test
@@ -61,7 +61,7 @@ jobs:
       uses: actions/upload-artifact@v3.1.0
       with:
         name: api_go
-        path: ./src/main
+        path: main
     
   docker:
     needs: build
