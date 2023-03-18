@@ -27,13 +27,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Moving go.mod
+      run: mv go.mod src/
+
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
         go-version: ${{ matrix.go_version }}
-    
-    - name: Moving go.mod
-      run: mv go.mod src/
     
     - name: Build-DB
       run: docker-compose --project-directory ./src --file ./src/docker-compose.yml build
