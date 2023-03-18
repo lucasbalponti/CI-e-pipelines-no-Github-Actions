@@ -12,7 +12,7 @@ Além disso, também foi feita a criação de uma Docker file para criar a image
 | -- | --|
 | [Script do Github Actions principal](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/blob/main/.github/workflows/go.yml) | Script onde foram configuradas as ações de testar o projeto, compilar o mesmo e chamar o script do docker. |
 | [Script do Github Actions para o Docker](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/blob/main/.github/workflows/Docker.yml) | Script onde foram configuradas as ações relacionadas à criação da imagem. |
-| [Dockerfile](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/blob/main/src/Dockerfile) | Dockerfile para a criação da imagem |
-| [Script docker compose](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/blob/main/src/docker-compose.yml) | Arquivo onde são feitas as configurações do docker do banco de dados  |
-| [Ações no github actions](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/actions) | Histórico de ações no github actions |
-| [Commits](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/commits/main) | Histórico de commits |
+| [Dockerfile](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/blob/main/src/Dockerfile) | Script onde foram configuradas as ações relacionadas à criação da imagem. |
+| [Script docker compose](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/blob/main/src/docker-compose.yml) | Script onde foram configuradas as ações relacionadas à criação da imagem. |
+| [Ações no github actions](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/actions) | Script onde foram configuradas as ações relacionadas à criação da imagem. |
+| [Commits](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/commits/main) | Script onde foram configuradas as ações relacionadas à criação da imagem. |
