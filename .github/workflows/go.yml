@@ -37,11 +37,12 @@ jobs:
     
     - name: Create-DB
       run: docker-compose --project-directory ./src --file ./src/docker-compose.yml up -d
+
+    - name: Corretion
+      run: go env -w GO111MODULE=off
     
     - name: Test
       run: go test ./src/main_test.go
-      env:
-        GOPATH: /home/runner/work/woodpecker/go
 
   build:
     needs: test
