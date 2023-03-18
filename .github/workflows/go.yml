@@ -27,8 +27,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Moving go.mod
-      run: mv go.mod src/
+    - name: Path correction
+      run: echo "${{ github.workspace }}/src" >> $GITHUB_PATH
 
     - name: Set up Go
       uses: actions/setup-go@v3
