@@ -39,7 +39,7 @@ jobs:
       run: docker-compose --project-directory ./src --file ./src/docker-compose.yml up -d
 
     - name: Test
-      run: go test ./src/main_test.go
+      run: go test -v ./src/main_test.go
 
   build:
     needs: test
