@@ -1,18 +1,13 @@
 # CI e pipelines no Github Actions
 
-Neste projeto foram desenvolvidos scripts para automação de ações no github action, para que à cada commit realizado seja:
-- Testado um código golang em diferentes versões do Ubuntu e diferentes versões do golang
-- Compilado o código golang em um arquivo
-- Criada uma imagem do projeto
-- Subida a imagem do projeto no dockerhub
+Neste projeto foram desenvolvidos scripts para automação de ações no github action, com o objetivo de:
+- Testar um código golang em diferentes versões do Ubuntu e diferentes versões do golang
+- Compilar o código golang em um arquivo
+- Criar uma imagem do projeto
+- Subir a imagem do projeto no dockerhub
 
 Além disso, também foi feita a criação de uma Docker file para criar a imagem e a criação de um script docker-compose para subir o respectivo docker.
 
 | Nome | Descrição |
 | -- | --|
-| [Script do Github Actions principal](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/blob/main/.github/workflows/go.yml) | Script onde foram configuradas as ações de testar o projeto, compilar o mesmo e chamar o script do docker. |
-| [Script do Github Actions para o Docker](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/blob/main/.github/workflows/Docker.yml) | Script onde foram configuradas as ações relacionadas à criação da imagem. |
-| [Dockerfile](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/blob/main/src/Dockerfile) | Script onde foram configuradas as ações relacionadas à criação da imagem. |
-| [Script docker compose](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/blob/main/src/docker-compose.yml) | Script onde foram configuradas as ações relacionadas à criação da imagem. |
-| [Ações no github actions](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/actions) | Script onde foram configuradas as ações relacionadas à criação da imagem. |
-| [Commits](https://github.com/lucasbalponti/CI-e-pipelines-no-Github-Actions/commits/main) | Script onde foram configuradas as ações relacionadas à criação da imagem. |
+| [Perceptron 3 Camadas - Momentum](./Redes%20Neurais/Perceptron%203%20Camadas%20-%20Momentum.py) | Rede neural perceptron de 3 camadas utilizando momentum para melhorar a velocidade de treinamento |

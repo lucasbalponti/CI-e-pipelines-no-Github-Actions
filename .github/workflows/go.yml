@@ -33,10 +33,10 @@ jobs:
         go-version: ${{ matrix.go_version }}
     
     - name: Build-DB
-      run: ./src/docker-compose build
+      run: docker-compose build
     
     - name: Create-DB
-      run: ./src/docker-compose up -d
+      run: docker-compose up -d
 
     - name: Test
       run: go test -v ./src/main_test.go
